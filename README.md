@@ -1,7 +1,7 @@
 Showdown's Prettify Extension
 ==========================
 
-[![Build Status](https://travis-ci.org/showdownjs/prettify-extension)](https://travis-ci.org/showdownjs/prettify-extension.svg) [![npm version](https://badge.fury.io/js/showdown-prettify.svg)](http://badge.fury.io/js/showdown-prettify) [![npm version](https://badge.fury.io/bo/showdown-prettify.svg)](http://badge.fury.io/bo/showdown-prettify)
+[![Build Status](https://travis-ci.org/showdownjs/prettify-extension.svg)](https://travis-ci.org/showdownjs/prettify-extension) [![npm version](https://badge.fury.io/js/showdown-prettify.svg)](http://badge.fury.io/js/showdown-prettify) [![npm version](https://badge.fury.io/bo/showdown-prettify.svg)](http://badge.fury.io/bo/showdown-prettify)
 
 ------
 
