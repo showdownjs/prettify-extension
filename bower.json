@@ -1,0 +1,34 @@
+{
+  "name": "showdown-prettify",
+  "description": "Add markdown prettify favor to showdown",
+  "homepage": "https://github.com/showdownjs/prettify-extension",
+  "license": "BSD",
+  "authors": [
+    "Estevão Santos (https://github.com/tivie)",
+    "Pascal Deschênes (https://github.com/pdeschen)",
+    "Corey Innis (https://github.com/coreyti)",
+    "John Fraser"
+  ],
+  "keywords": [
+    "markdown",
+    "showdown",
+    "showdown extension",
+    "prettify"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/showdownjs/prettify-extension.git",
+    "web": "https://github.com/showdownjs/prettify-extension"
+  },
+  "main": ["dist/showdown-prettify.js"],
+  "ignore": [
+    "src/",
+    "test/",
+    ".editorconfig",
+    ".gitignore",
+    ".jscs.json",
+    ".jshintrc",
+    ".travis.yml",
+    "Gruntfile.js"
+  ]
+}
