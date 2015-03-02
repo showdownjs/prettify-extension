@@ -21,6 +21,9 @@
     "web": "https://github.com/showdownjs/prettify-extension"
   },
   "main": ["dist/showdown-prettify.js"],
+  "dependencies": {
+    "showdown": "^0.3.4"
+  },
   "ignore": [
     "src/",
     "test/",
