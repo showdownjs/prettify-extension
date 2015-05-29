@@ -5,7 +5,7 @@ Showdown's Prettify Extension
 
 ------
 
-**An extension to add [Google Prettify](http://code.google.com/p/google-code-prettify/) hints to [showdown](https://github.com/showdownjs/showdown)'s HTML output **
+**An extension to add [Google Prettify](http://code.google.com/p/google-code-prettify/) hints to [showdown](https://github.com/showdownjs/showdown)'s HTML output**
 
 
 ## Installation
