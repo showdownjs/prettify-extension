@@ -1,3 +1,10 @@
+<a name"1.0.2"></a>
+### 1.0.2 (2015-06-04)
+
+#### Release information
+
+This is an hotfix for the documentation. (NPM requires a patch bump to update README.md)
+
 <a name"1.0.1"></a>
 ### 1.0.1 (2015-06-04)
 
