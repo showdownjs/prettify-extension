@@ -1,6 +1,6 @@
 {
   "name": "showdown-prettify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add markdown prettify flavor to showdown",
   "keywords": [
     "markdown",
@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/showdownjs/prettify-extension/issues"
   },
-  "main": "./dist/showdown-prettify-extension.js",
+  "main": "./dist/showdown-prettify.js",
   "scripts": {
     "test": "grunt test"
   },
