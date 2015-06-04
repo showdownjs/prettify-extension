@@ -1,3 +1,15 @@
+<a name"1.0.1"></a>
+### 1.0.1 (2015-06-04)
+
+#### Release information
+
+This is an hotfix for the npm package. Previously, the main attribute was poiting to an unexisting file. This hotfix fixes this.
+
+#### Bug Fixes
+
+* **package.json:** fix main attribute in package.json ([d219bf1a](https://github.com/showdownjs/prettify-extension/commit/d219bf1a))
+
+
 <a name"1.0.0"></a>
 ## 1.0.0 (2015-06-04)
 
