@@ -34,7 +34,7 @@ After including the extension in your application, you just need to enable it in
 ## Example
 
 ```javascript
-var converter = new Showdown.converter({extensions: ['prettify']}),
+var converter = new showdown.Converter({extensions: ['prettify']}),
     input = "Here's a simple hello world in javascript:\n" +
             "\n" +
             "    alert('Hello World!');\n" +
@@ -56,5 +56,5 @@ This should output the equivalent to:
 ```
 
 ## License
-These files are distributed under BSD license. For more information, please check the [LICENSE file](https://github.com/showdownjs/prettify-extension/blob/master/LICENSE) in the source code.
-
+These files are distributed under BSD license. For more information, 
+please check the [LICENSE file](https://github.com/showdownjs/prettify-extension/blob/master/LICENSE) in the source code.

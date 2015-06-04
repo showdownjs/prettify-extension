@@ -1,10 +1,10 @@
 {
   "name": "showdown-prettify",
-  "description": "Add markdown prettify favor to showdown",
+  "description": "Add markdown prettify flavor to showdown",
   "homepage": "https://github.com/showdownjs/prettify-extension",
   "license": "BSD",
   "authors": [
-    "Estevão Santos (https://github.com/tivie)",
+    "Estevão Soares dos Santos (https://github.com/tivie)",
     "Pascal Deschênes (https://github.com/pdeschen)",
     "Corey Innis (https://github.com/coreyti)",
     "John Fraser"
@@ -22,7 +22,7 @@
   },
   "main": ["dist/showdown-prettify.js"],
   "dependencies": {
-    "showdown": "^0.3.4"
+    "showdown": "1.0.x"
   },
   "ignore": [
     "src/",

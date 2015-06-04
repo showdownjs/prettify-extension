@@ -6,17 +6,16 @@
 
 (function () {
 
-  var prettify = function (converter) {
+  var prettify = function () {
     return [
       {
         type:   'output',
         filter: function (source) {
-
-          return source.replace(/(<pre>)?<code>/gi, function (match, pre) {
+          return source.replace(/(<pre[^>]*>)?[\n\s]?<code([^>]*)>/gi, function (match, pre, codeClass) {
             if (pre) {
-              return '<pre class="prettyprint linenums" tabIndex="0"><code data-inner="1">';
+              return '<pre class="prettyprint linenums"><code' + codeClass + '>';
             } else {
-              return '<code class="prettyprint">';
+              return ' <code class="prettyprint">';
             }
           });
         }
@@ -25,8 +24,8 @@
   };
 
   // Client-side export
-  if (typeof window !== 'undefined' && window.Showdown && window.Showdown.extensions) {
-    window.Showdown.extensions.prettify = prettify;
+  if (typeof window !== 'undefined' && window.showdown && window.showdown.extensions) {
+    window.showdown.extensions.prettify = prettify;
   }
   // Server-side export
     if (typeof module !== 'undefined') {

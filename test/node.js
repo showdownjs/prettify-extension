@@ -4,9 +4,9 @@
   require('chai').should();
 
   var fs = require('fs'),
-      extension = require('../src/prettify.js'),
+      extension = require('../src/showdown-prettify.js'),
       showdown = require('showdown'),
-      converter = new showdown.converter({extensions: [extension]}),
+      converter = new showdown.Converter({extensions: [extension]}),
       cases = fs.readdirSync('test/cases/')
         .filter(filter())
         .map(map('test/cases/')),

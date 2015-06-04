@@ -1,8 +1,6 @@
 module.exports = function (grunt) {
   'use strict';
 
-  require('shelljs/global');
-
   var config = {
     pkg: grunt.file.readJSON('package.json'),
     concat: {
@@ -13,6 +11,15 @@ module.exports = function (grunt) {
       dist: {
         src: ['src/*.js'],
         dest: 'dist/<%= pkg.name %>.js'
+      }
+    },
+    comments: {
+      js: {
+        options: {
+          singleline: true,
+          multiline: true
+        },
+        src: ['<%= concat.dist.dest %>']
       }
     },
     uglify: {
@@ -53,43 +60,16 @@ module.exports = function (grunt) {
           reporter:    'spec'
         }
       }
-    },
-    // Client-side tests
-    mocha: {
-      test: {
-        src: ['test/browser.html'],
-        options: {
-          run: true
-        }
-      }
-    },
-    githooks: {
-      all: {
-        'pre-commit': 'pre-commit'
-      }
     }
   };
 
   grunt.initConfig(config);
 
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-simple-mocha');
-  grunt.loadNpmTasks('grunt-mocha');
-  grunt.loadNpmTasks('grunt-jscs');
-  grunt.loadNpmTasks('grunt-conventional-changelog');
-  grunt.loadNpmTasks('grunt-githooks');
+  require('load-grunt-tasks')(grunt);
 
   grunt.registerTask('lint', ['jshint', 'jscs']);
-  grunt.registerTask('test', ['lint', 'mocha', 'simplemocha']);
-  grunt.registerTask('build', ['test', 'concat', 'uglify']);
-  grunt.registerTask('pre-commit', ['build', 'add-compressed-to-git']);
-
-  // Add compressed and minified files before committing
-  grunt.registerTask('add-compressed-to-git', function () {
-    exec('git add dist/');
-  });
+  grunt.registerTask('test', ['lint', 'simplemocha']);
+  grunt.registerTask('build', ['test', 'concat', 'comments', 'uglify']);
 
   grunt.registerTask('default', []);
 };
