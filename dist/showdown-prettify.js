@@ -1,6 +1,6 @@
-/*! showdown-prettify 04-06-2015 */
-
+/*! showdown-prettify 17-06-2015 */
 (function () {
+  'use strict';
 
   var prettify = function () {
     return [
@@ -21,10 +21,9 @@
   if (typeof window !== 'undefined' && window.showdown && window.showdown.extensions) {
     window.showdown.extensions.prettify = prettify;
   }
-    if (typeof module !== 'undefined') {
-        module.exports = prettify;
-    }
-
+  if (typeof module !== 'undefined') {
+    module.exports = prettify;
+  }
 }());
 
 //# sourceMappingURL=showdown-prettify.js.map

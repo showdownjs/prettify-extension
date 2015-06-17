@@ -34,17 +34,23 @@ module.exports = function (grunt) {
       }
     },
     jshint: {
-      files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js']
+      options: {
+        jshintrc: '.jshintrc'
+      },
+      files: [
+        'Gruntfile.js',
+        'src/**/*.js',
+        'test/**/*.js']
     },
     jscs: {
       options: {
-        config: '.jscs.json',
-        files: [
-          'Gruntfile.js',
-          'src/**/*.js',
-          'test/**/*.js'
-        ]
-      }
+        config: '.jscs.json'
+      },
+      files: [
+        'Gruntfile.js',
+        'src/**/*.js',
+        'test/**/*.js'
+      ]
     },
     changelog: {
       options: {}

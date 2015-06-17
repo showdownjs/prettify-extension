@@ -5,6 +5,7 @@
 //
 
 (function () {
+  'use strict';
 
   var prettify = function () {
     return [
@@ -28,8 +29,7 @@
     window.showdown.extensions.prettify = prettify;
   }
   // Server-side export
-    if (typeof module !== 'undefined') {
-        module.exports = prettify;
-    }
-
+  if (typeof module !== 'undefined') {
+    module.exports = prettify;
+  }
 }());
