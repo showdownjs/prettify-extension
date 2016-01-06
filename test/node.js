@@ -2,11 +2,11 @@
   'use strict';
 
   require('chai').should();
+  var showdown = require('showdown');
+  require('../src/showdown-prettify.js');
 
   var fs = require('fs'),
-      extension = require('../src/showdown-prettify.js'),
-      showdown = require('showdown'),
-      converter = new showdown.Converter({extensions: [extension]}),
+      converter = new showdown.Converter({extensions: ['prettify']}),
       cases = fs.readdirSync('test/cases/')
         .filter(filter())
         .map(map('test/cases/')),

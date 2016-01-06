@@ -1,3 +1,16 @@
+<a name"1.3.0"></a>
+## 1.3.0 (2016-01-06)
+
+#### Release information
+
+This update removes the warning that the extension is deprecated in the lastest versions of showdown.
+
+#### Breaking Changes
+
+Update extension to the new showdown's extenion loading mechanism.
+
+
+
 <a name"1.0.2"></a>
 ### 1.0.2 (2015-06-04)
 
